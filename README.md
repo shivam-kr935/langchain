@@ -1,106 +1,107 @@
-# LangChain Components: Data Ingestion, Transformation, Embeddings, and Vector Databases
+LangChain Components: Data Ingestion, Transformation, Embeddings, and Vector Databases
+Welcome to my LangChain exploration repository! This project delves into the core components of LangChain, demonstrating how to work with:
 
-Welcome to my LangChain exploration repository! This project dives into the **core components of LangChain**, demonstrating how to work with:
+✅ Data Ingestion
 
-- ✅ Data Ingestion  
-- ✅ Text Transformation  
-- ✅ Embedding Models  
-- ✅ Vector Databases
+✅ Text Transformation
 
----
+✅ Embedding Models
 
-## 📁 Project Structure
+✅ Vector Databases
 
-langchain/ ├── data_ingestion/ │ ├── text_loader.py │ ├── pdf_loader.py │ └── web_loader.py ├── data_transformation/ │ └── text_splitter.py ├── embeddings/ │ ├── openai_embeddings.py │ └── huggingface_embeddings.py ├── vector_databases/ │ ├── faiss_store.py │ └── chroma_store.py ├── .env └── README.md
-
-yaml
+📁 Project Structure
+bash
 Copy
 Edit
+langchain/
+├── data_ingestion/
+│   ├── text_loader.py
+│   ├── pdf_loader.py
+│   └── web_loader.py
+├── data_transformation/
+│   └── text_splitter.py
+├── embeddings/
+│   ├── openai_embeddings.py
+│   └── huggingface_embeddings.py
+├── vector_databases/
+│   ├── faiss_store.py
+│   └── chroma_store.py
+├── .env
+└── README.md
+🚀 Getting Started
+✅ Prerequisites
+Python 3.7+
 
----
+OpenAI API Key (for OpenAI Embeddings)
 
-## 🚀 Getting Started
+Hugging Face API Key (for Hugging Face Embeddings)
 
-### ✅ Prerequisites
+🔧 Installation
+Clone the repository:
 
-- Python 3.7+
-- OpenAI API Key (for OpenAI Embeddings)
-- Hugging Face API Key (for Hugging Face Models)
-
-### 🔧 Installation
-
-```bash
+bash
+Copy
+Edit
 git clone https://github.com/shivam-kr935/langchain.git
 cd langchain
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-🔐 Add Environment Variables
-Create a .env file and add:
+Create a virtual environment and activate it:
 
-ini
+bash
 Copy
 Edit
-OPENAI_API_KEY=your_openai_key
-HUGGINGFACE_API_KEY=your_hf_key
-📄 Data Ingestion
-Implemented in /data_ingestion
-Load documents from:
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install the required packages:
 
-.txt files – using TextLoader
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Set up environment variables:
 
-.pdf files – using PyPDFLoader
+Create a .env file in the root directory and add your API keys:
 
-Web URLs – using WebBaseLoader
+env
+Copy
+Edit
+OPENAI_API_KEY=your_openai_api_key
+HUGGINGFACE_API_KEY=your_huggingface_api_key
+🧩 Features
+1. Data Ingestion
+Text Loader: Load and process plain text files.
 
-✂️ Text Transformation
-Implemented in /data_transformation
+PDF Loader: Extract text from PDF documents.
 
-Use RecursiveCharacterTextSplitter to chunk text.
+Web Loader: Scrape and process web page content.
 
-Control chunk size and overlap for better embedding context.
+2. Data Transformation
+Text Splitter: Divide large text into manageable chunks for processing.
 
-🧠 Embeddings
-Implemented in /embeddings
+3. Embedding Models
+OpenAI Embeddings: Generate embeddings using OpenAI's API.
 
-OpenAIEmbedding – For GPT-based embedding vectors
+Hugging Face Embeddings: Utilize Hugging Face models for embedding generation.
 
-HuggingFaceEmbedding – Use local/hosted transformer models
+4. Vector Databases
+FAISS Store: Store and retrieve embeddings using Facebook's FAISS library.
 
-🗃️ Vector Databases
-Implemented in /vector_databases
+Chroma Store: Manage embeddings with the Chroma vector database.
 
-🔍 FAISS – For similarity search
-
-🧠 Chroma – Lightweight, fast embedding storage
-
-Use these to store and retrieve document vectors.
-
-🧪 Running Scripts
-You can run each file individually like this:
+📚 Usage
+Each module is designed to be self-contained. You can run individual scripts to test specific functionalities. For example:
 
 bash
 Copy
 Edit
 python data_ingestion/text_loader.py
-Make sure your files are placed in the appropriate location.
+Ensure that the necessary dependencies are installed and API keys are configured in the .env file.
 
-📚 References
-LangChain Docs
+🛠️ Tech Stack
+Programming Language: Python
 
-OpenAI API
+Libraries: LangChain, OpenAI, Hugging Face Transformers, FAISS, Chroma
 
-Hugging Face
+Tools: Virtualenv, dotenv
 
-FAISS
-
-Chroma
-
-🤝 Contributions
-Feel free to open issues or PRs to improve the repo or add use cases!
-
-📄 License
-This project is licensed under the MIT License.
-
-🧠 Built with learning & exploration by Shivam Kumar
-📬 Contact: GitHub
+🤝 Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request.
