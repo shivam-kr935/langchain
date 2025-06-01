@@ -1,69 +1,77 @@
-LangChain Components: Data Ingestion, Transformation, Embeddings, and Vector Databases
-Welcome to my LangChain exploration repository! This project delves into the core components of LangChain, demonstrating how to work with:
+# LangChain Components: Data Ingestion, Transformation, Embeddings, and Vector Databases
 
-✅ Data Ingestion
+Welcome to my LangChain exploration repository! This project demonstrates how to work with the core components of LangChain:
 
-✅ Text Transformation
+- ✅ Data Ingestion  
+- ✅ Text Transformation  
+- ✅ Embedding Models  
+- ✅ Vector Databases  
 
-✅ Embedding Models
+---
 
-✅ Vector Databases
+## 📁 Project Structure
 
-📁 Project Structure
-bash
-Copy
-Edit
 langchain/
 ├── data_ingestion/
-│   ├── text_loader.py
-│   ├── pdf_loader.py
-│   └── web_loader.py
+│ ├── text_loader.py
+│ ├── pdf_loader.py
+│ └── web_loader.py
 ├── data_transformation/
-│   └── text_splitter.py
+│ └── text_splitter.py
 ├── embeddings/
-│   ├── openai_embeddings.py
-│   └── huggingface_embeddings.py
+│ ├── openai_embeddings.py
+│ └── huggingface_embeddings.py
 ├── vector_databases/
-│   ├── faiss_store.py
-│   └── chroma_store.py
+│ ├── faiss_store.py
+│ └── chroma_store.py
 ├── .env
 └── README.md
-🚀 Getting Started
-✅ Prerequisites
-Python 3.7+
 
-OpenAI API Key (for OpenAI Embeddings)
+yaml
+Always show details
 
-Hugging Face API Key (for Hugging Face Embeddings)
-
-🔧 Installation
-Clone the repository:
-
-bash
 Copy
-Edit
-git clone https://github.com/shivam-kr935/langchain.git
-cd langchain
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Python 3.7+
+- OpenAI API Key (for OpenAI Embeddings)
+- Hugging Face API Key (for Hugging Face Embeddings)
+
+### 🔧 Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/shivam-kr935/langchain.git
+   cd langchain
 Create a virtual environment and activate it:
 
 bash
+Always show details
+
 Copy
-Edit
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 Install the required packages:
 
 bash
+Always show details
+
 Copy
-Edit
 pip install -r requirements.txt
 Set up environment variables:
 
 Create a .env file in the root directory and add your API keys:
 
 env
+Always show details
+
 Copy
-Edit
 OPENAI_API_KEY=your_openai_api_key
 HUGGINGFACE_API_KEY=your_huggingface_api_key
 🧩 Features
@@ -91,8 +99,9 @@ Chroma Store: Manage embeddings with the Chroma vector database.
 Each module is designed to be self-contained. You can run individual scripts to test specific functionalities. For example:
 
 bash
+Always show details
+
 Copy
-Edit
 python data_ingestion/text_loader.py
 Ensure that the necessary dependencies are installed and API keys are configured in the .env file.
 
