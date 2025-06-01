@@ -1,3 +1,5 @@
+# Create a single README.md file in markdown format
+readme_content = """\
 # LangChain Components: Data Ingestion, Transformation, Embeddings, and Vector Databases
 
 Welcome to my LangChain exploration repository! This project demonstrates how to work with the core components of LangChain:
@@ -27,10 +29,6 @@ langchain/
 ├── .env
 └── README.md
 
-yaml
-Always show details
-
-Copy
 
 ---
 
